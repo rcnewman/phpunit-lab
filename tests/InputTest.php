@@ -5,9 +5,9 @@ class InputTest extends PHPUnit_Framework_TestCase
 	public function tearDown()
 	{
 		if(isset($_GET['email'])){
-			unset($_GET['plan']);	
+			unset($_GET['email']);	
 		}
-		if(isset($_GET['email'])){
+		if(isset($_GET['plan'])){
 			unset($_GET['plan']);	
 		}
 		
