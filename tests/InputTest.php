@@ -19,8 +19,8 @@ class InputTest extends PHPUnit_Framework_TestCase
 	}
 	public function test_null_and_default(){
 		$email = Input::get('email');
-		$this->assertNull($email);
 		$plan = Input::get('plan','standard');
+		$this->assertNull($email);
 		$this->assertEquals($plan,'standard');
 	}
 }
